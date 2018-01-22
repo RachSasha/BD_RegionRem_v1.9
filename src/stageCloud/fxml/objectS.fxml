@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stageCloud.controllers.ObjectSController">
+   <children>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Адрес">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtAdres" editable="false" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Номер договора">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCustNumb" editable="false" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Дата договора">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="date" editable="false">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Вид работ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtType" editable="false" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Стоимость работ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCost" editable="false" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Срок гарантии">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtWarranty" editable="false" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Активность">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="checkBox" mnemonicParsing="false" prefHeight="25.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox fx:id="hBoxFIO">
+         <children>
+            <Label prefHeight="25.0" prefWidth="120.0" text="ФИО">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="txtFIO" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox fx:id="hBoxPhE">
+         <children>
+            <Label prefHeight="25.0" prefWidth="120.0" text="Телефон">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtPhone" editable="false" prefHeight="25.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label minWidth="-Infinity" prefHeight="25.0" prefWidth="60.0" text="Эл. почта">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtEmail" editable="false" prefHeight="25.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="25.0" prefWidth="120.0" text="Коментарий">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtAnnotation" editable="false" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0">
+         <children>
+            <TableView fx:id="table" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="640.0">
+               <columns>
+                  <TableColumn fx:id="clnName" minWidth="150.0" prefWidth="303.0" text="Наименование" />
+                  <TableColumn fx:id="clnPath" maxWidth="600.0" minWidth="50.0" prefWidth="335.0" text="Путь к файлу" />
+               </columns>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

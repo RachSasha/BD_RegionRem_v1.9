@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stageCloud.controllers.MainShowController">
+   <children>
+      <VBox minWidth="110.0" prefHeight="200.0">
+         <children>
+            <Button fx:id="btnCustomerTbl" minWidth="100.0" mnemonicParsing="false" onAction="#openCustomerTable" prefWidth="100.0" text="Заказчики">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnObjectTbl" minWidth="100.0" mnemonicParsing="false" onAction="#openObjectTable" prefWidth="100.0" text="Объекты">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnStaff" minWidth="100.0" mnemonicParsing="false" onAction="#openStaffTable" prefWidth="100.0" text="Персонал">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <AnchorPane>
+               <children>
+                  <TextField fx:id="txtSearch" layoutX="14.0" layoutY="19.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="paneMain" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="txtNameTable" alignment="CENTER" minHeight="20.0" text="Не выбрана" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <TableView fx:id="table" editable="true" layoutX="34.0" layoutY="-44.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

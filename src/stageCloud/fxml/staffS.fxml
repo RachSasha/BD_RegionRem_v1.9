@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stageCloud.controllers.StaffSController">
+   <children>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="ФИО">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtFIO" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" text="Паспорт">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtPassport" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hBoxPhE">
+         <children>
+            <Label prefHeight="25.0" prefWidth="120.0" text="Телефон">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtPhone" prefHeight="25.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label minWidth="-Infinity" prefHeight="25.0" prefWidth="60.0" text="Эл. почта">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtEmail" prefHeight="25.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="25.0" prefWidth="120.0" text="Коментарий">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtAnnotation" prefHeight="25.0" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</VBox>
